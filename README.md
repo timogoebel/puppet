@@ -8,7 +8,7 @@ TBD
 
 To install puppet on a fresh raspberry pi:
 
-	sudo bash < <( curl https://github.com/timogoebel/rpi-puppet/blob/master/install.sh )
+	sudo bash < <( curl https://raw.github.com/timogoebel/rpi-puppet/master/install.sh )
 
 # Update
 
