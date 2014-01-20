@@ -8,10 +8,10 @@ TBD
 
 To install puppet on a fresh raspberry pi:
 
-	sudo bash < <( curl https://raw.github.com/timogoebel/raspbian-mod/master/slim.sh )
+	sudo bash < <( curl https://github.com/timogoebel/rpi-puppet/blob/master/install.sh )
 
 # Update
 
 To update raspberry pi:
 
-	/etc/puppet/update.sh
+	sudo /etc/puppet/update.sh
