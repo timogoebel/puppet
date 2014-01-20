@@ -11,3 +11,5 @@ rm -rf /etc/puppet
 
 git clone https://github.com/timogoebel/rpi-puppet.git /etc/puppet
 puppet apply --verbose /etc/puppet/manifests/config.pp
+
+echo '17 05 * * * root /etc/puppet/update.sh' > /etc/cron.d/puppetrun
