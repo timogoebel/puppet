@@ -38,6 +38,14 @@ ssh_authorized_key { 'timogoebel-ssh-key':
   require => File['/home/timogoebel/.ssh'],
 }
 
+ssh_authorized_key { 'timogoebel-iphone-ssh-key':
+  ensure => 'present',
+  type => 'rsa',
+  user => 'timogoebel',
+  key => 'AAAAB3NzaC1yc2EAAAABJQAAAIB+iWcMTv9ZKF/Qv7VJ+arv10qqWK8xD3Bf5PWgvPTITGNjUucoS8puBlGx5mC5SZn2t5YZ9nfqky0c60/gSBH4hT7A2wrKgtLZCLHZBUK45FtewP5URwUA1jA86QXuC5YS28WHVlI6b7KeTUIKoEmr6nS7P9SvdSySVHGIimUKCQ==',
+  require => File['/home/timogoebel/.ssh'],
+}
+
 user { 'pi':
   ensure => 'absent',
 }
