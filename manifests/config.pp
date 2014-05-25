@@ -18,7 +18,7 @@ user { 'timogoebel':
   ensure     => 'present',
   home       => '/home/timogoebel',
   shell      => '/bin/bash',
-  managehome => 'true',
+  managehome => true,
   groups => 'admins',
   require => Group['admins'],
 }
@@ -46,7 +46,7 @@ class { 'sudo': }
 
 sudo::conf { 'admins':
   priority => 10,
-  content  => "%admins ALL=(ALL) NOPASSWD: ALL",
+  content  => '%admins ALL=(ALL) NOPASSWD: ALL',
 }
 
 class { 'ngrok': }
